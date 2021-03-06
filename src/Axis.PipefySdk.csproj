@@ -2,11 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>9</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="Mutations\CardFieldUpdateRequest.ql" />
     <None Remove="Mutations\CardTitleUpdateRequest.ql" />
+    <None Remove="Mutations\CreateCardRequest.ql" />
     <None Remove="Mutations\DeleteCardRequest.ql" />
     <None Remove="Queries\AllCardsRequest.ql" />
     <None Remove="Queries\CardRequest.ql" />
@@ -18,6 +20,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Mutations\CardFieldUpdateRequest.ql" />
     <EmbeddedResource Include="Mutations\CardTitleUpdateRequest.ql" />
+    <EmbeddedResource Include="Mutations\CreateCardRequest.ql" />
     <EmbeddedResource Include="Mutations\DeleteCardRequest.ql" />
     <EmbeddedResource Include="Queries\CardRequest.ql" />
     <EmbeddedResource Include="Queries\AllCardsRequest.ql" />
@@ -27,8 +30,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Net.Http.Json" Version="3.2.1" />
-    <PackageReference Include="System.Text.Json" Version="4.7.2" />
+    <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
+    <PackageReference Include="System.Text.Json" Version="5.0.1" />
   </ItemGroup>
 
 </Project>

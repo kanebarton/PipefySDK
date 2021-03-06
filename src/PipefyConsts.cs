@@ -11,6 +11,7 @@
             public const string FieldId = "@fieldId";
             public const string NewValue = "@newValue";
             public const string Title = "@title";
+            public const string FieldArray = "@fieldArray";
         }
     }
 }

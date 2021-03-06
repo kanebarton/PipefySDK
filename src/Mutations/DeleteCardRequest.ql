@@ -1,5 +1,5 @@
 ﻿mutation { 
- deleteCard(input: {id: @cardId}) {
+ deleteCard(input: { id: @cardId }) {
    clientMutationId
    success
  }

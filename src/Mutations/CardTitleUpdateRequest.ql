@@ -1,5 +1,5 @@
 ﻿mutation{
-  updateCard(input: {id: @cardId, title: "@title" }) {
+  updateCard(input: { id: @cardId, title: "@title" }) {
     clientMutationId
   }
 }

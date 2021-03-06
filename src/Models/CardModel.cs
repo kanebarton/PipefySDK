@@ -49,8 +49,6 @@ namespace Axis.PipefySdk.Models
         [JsonPropertyName("creatorEmail")]
         public string CreatorEmail { get; set; }
 
-
-
         [JsonPropertyName("updated_at")]
         public DateTimeOffset? UpdatedAt { get; set; }
 
