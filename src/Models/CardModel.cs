@@ -38,7 +38,7 @@ namespace Axis.PipefySdk.Models
         public PhaseHistoryModel[] PhaseHistory { get; set; }
 
         [JsonPropertyName("url")]
-        public Uri Url { get; set; }
+        public string Url { get; set; }
 
         [JsonPropertyName("createdAt")]
         public DateTimeOffset CreatedAt { get; set; }
@@ -93,6 +93,8 @@ namespace Axis.PipefySdk.Models
         }
 
         public CardFieldModel GetField(string indexName) => Fields[indexName];
+        public PipefyIdNameUsernameModel FirstAssignee => Assignees?.FirstOrDefault();
+        public bool HasAssignee => FirstAssignee != null;
 
         public class PhaseHistoryModel
         {

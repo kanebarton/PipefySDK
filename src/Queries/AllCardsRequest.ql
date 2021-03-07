@@ -11,6 +11,17 @@
       node {
         id
         title
+        url
+        done
+        assignees {
+          id
+          name
+          username
+        }
+        current_phase {
+          id
+          name
+        }
         fields {
           date_value
           datetime_value
